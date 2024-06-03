@@ -1,0 +1,3 @@
+*.o
+Makefile.win
+Check_HEX_file_errors.exe
