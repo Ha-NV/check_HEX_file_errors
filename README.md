@@ -1,13 +1,17 @@
 # check_HEX_file_errors
-    Viết chương trình đọc và kiểm tra lỗi các trường trong file Intel hex
+    Write a program to read and check fields in Intel hex file for errors
     (https://en.wikipedia.org/wiki/Intel_HEX)
     
-    - Tách và phân tích các filed của record. (Start code Byte count Address Record type Data Checksum)
+    - Separate and analyze fields of records. (Start code Byte count Address Record type Data Checksum)
     
-    - Nếu các trường Byte count, Checksum, bị sai so với thực tế hoặc cấu trúc record không đúng (thiếu start code) thì record đó bị lỗi.
+    - If the fields Byte count, Checksum, are wrong compared to reality or the record structure is incorrect (missing start code), 
+    then that record is error.
     
-    - Nếu file tồn tại 1 record lỗi thì dừng kiểm tra lỗi và thông báo: File đã bị lỗi do tồn tại 1 record lỗi.
+    - If the file contains an error record, stop checking for errors and notify: The file is corrupted due to the existence of 
+    an error record.
     
-    - Nếu không có End Of File record ở cuối file, cần đưa ra thông báo: File bị lỗi không tồn tại End Of File record.
+    - If there is no End Of File record at the end of the file, a message should be given: The file is corrupted and does 
+    not have an End Of File record.
     
-    - Nếu file đúng theo format, không bị lỗi, hiển thị nội dung Absolute memory address và Data field của các record theo thứ tự record đọc vào.
+    - If the file is in the correct format, without errors, display the Absolute memory address and Data fields of the records
+    in the order the records are read.
